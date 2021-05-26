@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#wrap #header {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+}
+
+#wrap .content {
+  width: 100%;
+}
+
+#wrap .content .sct1 {
+  height: 100px;
+}
+
+#wrap .content .sct2 {
+  height: 200px;
+}
+
+#wrap .content .sct3 {
+  height: 300px;
+}
+
+#wrap .content .sct4 {
+  height: 400px;
+}
