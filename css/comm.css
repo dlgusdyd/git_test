@@ -3,34 +3,78 @@
   padding: 0;
 }
 
+.content .as_button01, .content .bs_button01, .content .cs_button01 {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  height: 50px;
+  margin: 0 5px;
+  border: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
 #wrap {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-#wrap #header {
+#header {
   width: 100%;
   height: 100px;
   background-color: #000;
 }
 
-#wrap .content {
+.content {
   width: 100%;
 }
 
-#wrap .content .sct1 {
+.content .sct1 {
   height: 100px;
 }
 
-#wrap .content .sct2 {
+.content .sct2 {
   height: 200px;
 }
 
-#wrap .content .sct3 {
+.content .sct3 {
   height: 300px;
 }
 
-#wrap .content .sct4 {
+.content .sct4 {
   height: 400px;
+}
+
+.content .sct5 {
+  height: 500px;
+}
+
+.content > p {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content > span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content .as_button01 {
+  background-color: red;
+}
+
+.content .bs_button01 {
+  background-color: blue;
+}
+
+.content .cs_button01 {
+  background-color: purple;
 }

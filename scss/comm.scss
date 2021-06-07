@@ -1,15 +1,58 @@
+@mixin type01{
+    width:100%;
+    height:200px;
+    background-color:#ddd;
+    font-size:12px;
+    font-weight:600;
+    text-align:center;
+}
+@mixin type02($font-size , $font-weight){
+    font-size:$font-size;
+    font-weight:$font-weight;
+}
 $black_color:#000;
 *{margin:0; padding:0;}
+%btn_style{
+    display:inline-block;
+    vertical-align:top;
+    width:200px;
+    height:50px;
+    margin:0 5px;
+    border:0;
+    padding:0;
+    font-size:12px;
+    font-weight:400;
+    color:#fff;
+    text-align:center;
+}
 #wrap{
     width:100%;
     max-width:1200px; margin:0 auto;
-    #header{
-        width:100%; height:100px; background-color:$black_color;
+}
+#header{
+    width:100%; height:100px; background-color:$black_color;
+}
+.content{
+    width:100%;
+    @for $i from 1 through 5{
+        .sct#{$i}{height:$i*100px;}
     }
-    .content{
-        width:100%;
-        @for $i from 1 through 5{
-            .sct#{$i}{height:$i*100px;}
-        }
+    & > p{
+        @include type01;
+    }
+    & > span{
+        @include type02(20px,400);
+    }
+    .as_button01{
+        @extend %btn_style;
+        background-color:red;
+    }
+    .bs_button01{
+        @extend %btn_style;
+        background-color:blue;
+    }
+    .cs_button01{
+        @extend %btn_style;
+        background-color:purple;
     }
 }
